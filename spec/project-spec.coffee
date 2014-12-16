@@ -9,6 +9,7 @@ BufferedProcess = require '../src/buffered-process'
 
 describe "Project", ->
   beforeEach ->
+    atom.project.getRepo()
     atom.project.setPaths([atom.project.resolve('dir')])
 
   describe "serialization", ->
